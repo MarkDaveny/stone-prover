@@ -77,7 +77,7 @@ void mult64(uint64_t* z, uint64_t x, uint64_t y) {
 // Adds two 256-bit integers:
 // x = (x[0], x[1], x[2], x[3])
 // y = (y[0], y[1], y[2], y[3])
-// Retruns a (256+64)-bit integer:
+// Returns a (256+64)-bit integer:
 // z = (z[0], z[1], z[2], z[3], z[4]) = x+y
 // Low-order words are in low-order indexes.
 void add256(uint64_t* z, const uint64_t* x, const uint64_t* y) {

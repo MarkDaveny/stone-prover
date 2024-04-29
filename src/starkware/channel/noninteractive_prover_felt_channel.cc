@@ -129,7 +129,7 @@ void NoninteractiveProverFeltChannel::ApplyProofOfWork(size_t security_bits) {
     using POWHashT = typename decltype(hash_tag)::type;
     ASSERT_RELEASE(
         ProofOfWorkVerifier<POWHashT>::kNonceBytes <= FeltSizeInBytes,
-        "Nonce size has to be smaller the the number of bytes of the channel's state.");
+        "Nonce size has to be smaller the number of bytes of the channel's state.");
     ProofOfWorkProver<POWHashT> pow_prover;
     return pow_prover.Prove(GetStateBytesVector(), security_bits);
   });

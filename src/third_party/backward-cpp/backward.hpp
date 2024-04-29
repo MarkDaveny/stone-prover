@@ -88,7 +88,7 @@
 // #define BACKWARD_HAS_UNWIND 1
 //  - unwind comes from libgcc, but I saw an equivalent inside clang itself.
 //  - with unwind, the stacktrace is as accurate as it can possibly be, since
-//  this is used by the C++ runtine in gcc/clang for stack unwinding on
+//  this is used by the C++ runtime in gcc/clang for stack unwinding on
 //  exception.
 //  - normally libgcc is already linked to your program by default.
 //
@@ -247,7 +247,7 @@
 // #define BACKWARD_HAS_UNWIND 1
 //  - unwind comes from libgcc, but I saw an equivalent inside clang itself.
 //  - with unwind, the stacktrace is as accurate as it can possibly be, since
-//  this is used by the C++ runtine in gcc/clang for stack unwinding on
+//  this is used by the C++ runtime in gcc/clang for stack unwinding on
 //  exception.
 //  - normally libgcc is already linked to your program by default.
 //
